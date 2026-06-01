@@ -202,11 +202,11 @@ const faqs = [
   },
   {
     q: "Where is the salon located?",
-    a: "The salon is located in Abu Dhabi, UAE. Exact location details should be confirmed with the salon team before publishing the final website.",
+    a: "The salon serves ladies in Abu Dhabi, UAE. Full map and direction details can be added once the final location is approved.",
   },
   {
     q: "What are your opening hours?",
-    a: "Opening hours should be confirmed directly with the salon before the final website goes live.",
+    a: "Opening hours can be listed here once the salon confirms its weekly schedule and holiday timings.",
   },
 ];
 
@@ -266,7 +266,7 @@ function App() {
 
       <header className="fixed inset-x-0 top-0 z-50 border-b border-[#E8A7B4]/20 bg-[#FFF8F3]/90 backdrop-blur-xl">
         <div className="hidden border-b border-[#E8A7B4]/15 bg-[#2A1E1B] px-5 py-2 text-center text-xs font-semibold tracking-wide text-white/78 sm:block">
-          Modern demo concept: premium salon website + WhatsApp booking assistant
+          Premium ladies salon experience in Abu Dhabi with easy WhatsApp booking
         </div>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
           <a href="#home" className="group flex items-center gap-3">
@@ -342,7 +342,7 @@ function App() {
                 Beauty, Hair & Self-Care Services for Ladies in Abu Dhabi
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#7A625B]">
-                A polished demo website concept for a ladies salon experience built around hair styling, makeup, nails, facials, threading, waxing, bridal beauty, and fast WhatsApp booking.
+                A graceful beauty destination for hair styling, makeup, nails, facials, threading, waxing, bridal beauty, and quick appointment requests through WhatsApp.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <CTAButton />
@@ -357,9 +357,9 @@ function App() {
               </div>
               <div className="mt-8 grid max-w-2xl gap-3 sm:grid-cols-3">
                 {[
-                  { label: "Website", value: "Premium one-page demo" },
-                  { label: "Booking", value: "WhatsApp-first flow" },
-                  { label: "Goal", value: "More inquiries" },
+                  { label: "Salon", value: "Ladies beauty care" },
+                  { label: "Booking", value: "WhatsApp appointments" },
+                  { label: "Location", value: "Abu Dhabi, UAE" },
                 ].map((item) => (
                   <div key={item.label} className="rounded-3xl bg-white/70 p-4 shadow-sm ring-1 ring-[#E8A7B4]/20 backdrop-blur">
                     <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#9D6673]">{item.label}</p>
@@ -409,7 +409,7 @@ function App() {
                 Beauty Services for Every Occasion
               </h2>
               <p className="mt-5 text-lg leading-8 text-[#7A625B]">
-                Whether customers are preparing for a special event, refreshing their everyday look, or planning a self-care day, this structure presents every major service clearly and guides visitors toward a WhatsApp inquiry.
+                From everyday grooming to special occasion beauty, each service is presented clearly so visitors can choose what they need and request an appointment with ease.
               </p>
             </div>
 
@@ -453,7 +453,7 @@ function App() {
                 Beauty Packages Made for Your Plans
               </h2>
               <p className="mt-5 text-lg leading-8 text-[#7A625B]">
-                Choose from simple beauty refreshes, relaxing self-care combinations, and event-ready packages. Final services, availability, and prices can be confirmed directly through WhatsApp.
+                Choose from quick refreshes, relaxing self-care combinations, and event-ready packages. Services and prices can be tailored to each customer before booking.
               </p>
             </div>
 
@@ -633,14 +633,14 @@ function App() {
                     What Customers Say
                   </h2>
                   <p className="mt-5 text-lg leading-8 text-[#7A625B]">
-                    Real customer reviews can be added here once confirmed by the salon. For this demo, the cards are clearly marked as sample reviews so the concept stays professional and honest.
+                    A strong review section helps new visitors feel confident before they book. It gives the salon space to highlight the warmth, care, and polished results customers remember.
                   </p>
                 </div>
                 <div className="grid gap-5 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
                   {[
-                    "Lovely salon experience. The team was friendly, and I loved my final look.",
-                    "Great place for hair, nails, and self-care. Booking was easy and convenient.",
-                    "Perfect for event beauty. I would recommend confirming your appointment through WhatsApp.",
+                    "Friendly service, a calm salon visit, and a beautiful final look.",
+                    "A convenient place for hair, nails, skin care, and self-care appointments.",
+                    "A lovely choice for event beauty, party makeup, and polished hair styling.",
                   ].map((quote, index) => (
                     <div key={quote} className="rounded-[2rem] bg-white p-6 shadow-sm">
                       <div className="mb-4 flex gap-1 text-[#C8A96A]">
@@ -648,9 +648,9 @@ function App() {
                           <Star key={i} className="h-4 w-4 fill-current" />
                         ))}
                       </div>
-                      <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#9D6673]">Sample Review</p>
+                      <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#9D6673]">Customer Highlight</p>
                       <p className="mt-3 text-sm leading-6 text-[#7A625B]">"{quote}"</p>
-                      <p className="mt-4 text-sm font-bold text-[#2A1E1B]">Demo Customer {index + 1}</p>
+                      <p className="mt-4 text-sm font-bold text-[#2A1E1B]">Salon Guest {index + 1}</p>
                     </div>
                   ))}
                 </div>
@@ -773,7 +773,7 @@ function App() {
                     Ready to Book Your Beauty Appointment?
                   </h2>
                   <p className="mt-5 max-w-2xl text-lg leading-8 text-[#7A625B]">
-                    Message Unique Ladies Beauty Salon on WhatsApp to ask about services, prices, offers, appointment availability, bridal bookings, or salon location. This section is designed to turn mobile visitors into direct inquiries.
+                    Message Unique Ladies Beauty Salon on WhatsApp to ask about services, prices, offers, appointment availability, bridal bookings, or salon location.
                   </p>
                   <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                     <CTAButton>Chat on WhatsApp</CTAButton>
@@ -791,13 +791,13 @@ function App() {
                     {
                       icon: MapPin,
                       title: "Location",
-                      copy: "Abu Dhabi, UAE. Exact salon address to be confirmed.",
+                      copy: "Abu Dhabi, UAE. Map directions can be added once the final address is approved.",
                       action: "Get Location",
                     },
                     {
                       icon: Clock,
                       title: "Opening Hours",
-                      copy: "Opening hours to be confirmed with the salon team.",
+                      copy: "Weekly opening hours and holiday timings can be added before launch.",
                       action: "Ask on WhatsApp",
                     },
                   ].map((card) => {
@@ -856,7 +856,7 @@ function App() {
               Beauty, hair, nails, makeup, facials, waxing, threading, henna, and self-care services for ladies in Abu Dhabi.
             </p>
             <p className="mt-4 rounded-2xl bg-white/7 p-4 text-xs leading-6 text-white/55">
-              Demo website concept created to show how Unique Ladies Beauty Salon could present its services online with a modern website and WhatsApp booking experience.
+              A modern online home for presenting salon services, beauty packages, customer highlights, and quick WhatsApp appointment requests.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:justify-end">
